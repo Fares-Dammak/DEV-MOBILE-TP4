@@ -18,7 +18,6 @@ import com.example.fares_dammak_tp1.model.Patient;
 public class MainActivity extends AppCompatActivity {
 
     private EditText etValeur;
-    ;
     private Button button;
     private SeekBar seekBar;
     private RadioButton radioButtonNon;
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 if(age == 0 || valeur == 0.0){
                     Toast.makeText(MainActivity.this, "Verifez vous information", Toast.LENGTH_SHORT).show();
                 }else{
-                    p.calculer(valeur, age);
+                    tvResultat.setText(p.calculer(valeur, age));
                 }
 
             }

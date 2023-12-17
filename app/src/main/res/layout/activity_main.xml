@@ -26,11 +26,9 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent" />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-         <TextView
+
+    <TextView
+        android:id="@+id/tvAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -40,18 +38,6 @@
         android:textSize="25sp"
         android:textStyle="bold"
         />
-        <TextView
-            android:id="@+id/tvAge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:fontFamily="monospace"
-            android:text=" h"
-            android:textColor="#0C0C0C"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
 
     <SeekBar
         android:id="@+id/sbAge"

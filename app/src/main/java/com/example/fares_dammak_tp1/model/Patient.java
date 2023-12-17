@@ -38,7 +38,7 @@ public class Patient {
         this.valButton = valButton;
     }
 
-    public void calculer(double valeur, int age){
+    public String calculer(double valeur, int age){
         boolean isNormal = true;
         String result;
         if(valButton==false){
@@ -62,6 +62,6 @@ public class Patient {
                 }
             }
         }
-        result = isNormal? "Normale" : "Anormale";
+        return result = isNormal? "Le patient est Normale" : "Le patient est Annormale";
     }
 }
